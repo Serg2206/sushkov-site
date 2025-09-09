@@ -5,9 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Сушков Сергей Валентинович — Профессор, доктор медицинских наук</title>
   <meta name="description" content="Профессор, доктор медицинских наук, хирург высшей категории. Академическое портфолио RU/EN с публикациями и опытом." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    body {margin:0;font-family:system-ui, sans-serif;background:#0f172a;color:#e5e7eb;line-height:1.6;}
+    a { color:#0ea5e9; }
+    header,footer{padding:1rem;border-bottom:1px solid #1f2937}
+    footer{border-top:1px solid #1f2937;border-bottom:none;background:#111827}
+    .container{width:min(1100px,100% - 2rem);margin:0 auto}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .logo-img{height:48px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:1.5rem;align-items:center;padding:2rem 0}
+    .hero img.portrait{width:100%;height:auto;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.5);background:#fff}
+    @media(max-width:768px){.hero{grid-template-columns:1fr}.hero img.portrait{max-width:280px;margin:auto}}
+    .panel{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:16px;margin-bottom:1rem}
+    .section-head h2{margin:0 0 .5rem}
+    .pill { padding:.25rem .6rem;border-radius:999px;border:1px solid #1f2937;font-size:12px;color:#94a3b8 }
+    .lang-switch{cursor:pointer;padding:.3rem .6rem;border:1px solid #1f2937;border-radius:8px;background:#0b1220;color:#e5e7eb}
+    ul.clean {margin:0;padding-left:18px}
+    li+li{margin-top:.4rem}
+  </style>
 </head>
 <body>
-  <h1>Сушков Сергей Валентинович</h1>
-  <p>Двуязычное академическое портфолио (RU/EN). См. README.md для инструкции по публикации на GitHub Pages.</p>
+  <header>
+    <div class="container nav">
+      <div style="display:flex;align-items:center;gap:.5rem">
+        <img src="логотип.png" alt="Логотип института" class="logo-img" />
+        <strong>Сушков С.В.</strong>
+      </div>
+      <div>
+        <button class="lang-switch" onclick="setLang('ru')">RU</button>
+        <button class="lang-switch" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1 data-ru="СУШКОВ СЕРГЕЙ ВАЛЕНТИНОВИЧ" data-en="SUSHKOV SERGEY VALENTINOVICH"></h1>
+        <p data-ru="Профессор, доктор медицинских наук, хирург высшей категории. Специализация: хирургия, онкохирургия, торакальная хирургия, хирургия сердца и сосудов, организация здравоохранения."
+           data-en="Professor, Doctor of Medical Sciences, Surgeon of the highest category. Specialization: surgery, oncological surgery, thoracic surgery, cardiac and vascular surgery, healthcare management."></p>
+      </div>
+      <div>
+        <img src="2008-04-12 18.03.32.jpg" alt="Сушков Сергей Валентинович" class="portrait"/>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="section-head"><h2 data-ru="Профессиональный профиль" data-en="Professional Profile"></h2></div>
+      <div class="panel">
+        <p data-ru="Доктор медицинских наук с более чем 35‑летним опытом. Заместитель директора по научной работе Института общей и неотложной хирургии им. Зайцева НАМН Украины. Автор 102 публикаций, 12 патентов, 5 монографий."
+           data-en="Doctor of Medical Sciences with over 35 years of surgical practice. Deputy Director for Research at V.T. Zaitsev Institute of General and Emergency Surgery, NAMS of Ukraine. Author of 102 publications, 12 patents, 5 monographs."></p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-head"><h2 data-ru="Образование и квалификация" data-en="Education and Qualifications"></h2></div>
+      <div class="panel">
+        <ul class="clean">
+          <li data-ru="Доктор медицинских наук (Хирургия), 2007."
+              data-en="Doctor of Medical Sciences (Surgery), 2007."></li>
+          <li data-ru="Профессор, с 2008 года."
+              data-en="Professor, since 2008."></li>
+          <li data-ru="Кандидат медицинских наук, 1998."
+              data-en="Candidate of Medical Sciences, 1998."></li>
+          <li data-ru="Высшее образование: Харьковский медицинский институт, 1986."
+              data-en="Higher education: Kharkiv Medical Institute, 1986."></li>
+          <li data-ru="Сертификат GCP; высшая категория по хирургии."
+              data-en="GCP Certificate; Highest surgical qualification."></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-head"><h2 data-ru="Профессиональный опыт" data-en="Professional Experience"></h2></div>
+      <div class="panel">
+        <ul class="clean">
+          <li data-ru="Заместитель директора по научной работе, ИНУХ им. Зайцева, 2004–н.в."
+              data-en="Deputy Director for Research, Zaitsev IGES, 2004–present."></li>
+          <li data-ru="Профессор кафедры хирургии №1, ХНМУ, с 2008."
+              data-en="Professor, Dept. of Surgery No.1, Kharkiv National Medical University, since 2008."></li>
+          <li data-ru="Главный хирург, Южная железная дорога, 2000–2002."
+              data-en="Chief Surgeon, Southern Railway Medical Service, 2000–2002."></li>
+          <li data-ru="Врач‑хирург, ГКБ №1, Харьков, 1992–2000."
+              data-en="Surgeon, City Clinical Hospital No.1, Kharkiv, 1992–2000."></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="section-head"><h2 data-ru="Избранные публикации (ТОП‑10)" data-en="Selected Publications (Top‑10)"></h2></div>
+      <div class="panel">
+        <ul class="clean">
+          <li data-ru="Ферропротеины как биомаркеры при распространённом перитоните (2012) — 11 цит."
+              data-en="Ferritins as biomarkers in diffuse peritonitis (2012) — 11 citations."></li>
+          <li data-ru="Практическое значение малонового диальдегида при перитоните (2012) — 10 цит."
+              data-en="Practical value of malondialdehyde in peritonitis (2012) — 10 citations."></li>
+          <li data-ru="Иммунные нарушения при острых язвенных кровотечениях (2015) — 7 цит."
+              data-en="Immune disorders in acute ulcerative GI bleeding (2015) — 7 citations."></li>
+          <li data-ru="Immunoreactivity changes in GI pathology (2019) — 6 цит."
+              data-en="Immunoreactivity changes in gastrointestinal pathology (2019) — 6 citations."></li>
+          <li data-ru="Цитокино‑ и озонотерапия при перитоните (2014) — 6 цит."
+              data-en="Cytokine and ozone therapy in diffuse peritonitis (2014) — 6 citations."></li>
+          <li data-ru="Озонотерапия при распространённом перитоните (2012) — 6 цит."
+              data-en="Ozone therapy in diffuse peritonitis (2012) — 6 citations."></li>
+          <li data-ru="Патофизиология при массивной кровопотере (2007) — 6 цит."
+              data-en="Pathophysiological changes during massive blood loss (2007) — 6 citations."></li>
+          <li data-ru="Методы при флебэктазиях пищевода (2006) — 6 цит."
+              data-en="Choice of surgical treatment for esophageal varices (2006) — 6 citations."></li>
+          <li data-ru="Ультраструктура слизистой при язвах (2006) — 6 цит."
+              data-en="Ultrastructural changes of gastric mucosa in ulcers (2006) — 6 citations."></li>
+          <li data-ru="Динамика цитокинов при перитоните (2012) — 4 цит."
+              data-en="Dynamics of cytokines in diffuse peritonitis (2012) — 4 citations."></li>
+        </ul>
+        <p><a href="https://scholar.google.co.uk/citations?user=HcOG6WIAAAAJ&amp;hl=ru" target="_blank">▶ Полный список / Full list on Google Scholar</a></p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-head"><h2 data-ru="Контакты" data-en="Contacts"></h2></div>
+      <div class="panel">
+        <p><strong data-ru="Адрес:" data-en="Address:"></strong> 
+          <span data-ru="Харьков, въезд Балакирева, 1" data-en="1 Balakireva Lane, Kharkiv, Ukraine"></span>
+        </p>
+        <p><strong>Tel:</strong> <a href="tel:+380675707949">+38067 570 79 49</a></p>
+        <p>Email: <a href="/cdn-cgi/l/email-protection#0b78787d656a7e606a4b6c666a626725686466"><span class="__cf_email__" data-cfemail="f48787829a95819f95b49399959d98da979b99">[email&#160;protected]</span></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+      <div>© <span id="year"></span> Сушков С.В.</div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+        <span class="pill">EAES</span>
+        <span class="pill">GCP</span>
+        <span class="pill">102 публикации</span>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function setLang(lang){
+      document.querySelectorAll("[data-"+lang+"]").forEach(el=>{
+        el.textContent = el.getAttribute("data-"+lang);
+      });
+    }
+    setLang('ru');
+  </script>
 </body>
 </html>
